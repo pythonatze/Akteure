@@ -268,7 +268,7 @@ while int(slimestr) >= 8  and int(slimestr) < 22:
         keule = kurslese('ISIN_aktien.csv', 'kursdaten_lemon_tradeble_400.csv')
 
         print(keule)
-        with open('/Users/A1167082/Desktop/Datenberg/Kaufsignale/pfad/'+ 'kursdaten_lemon_'+ timestr +'.csv', 'a') as f:
+        with open('kursdaten_lemon_'+ timestr +'.csv', 'a') as f:
             keule.to_csv(f, header=f.tell() == 0)
 
             print(15*'#########')
