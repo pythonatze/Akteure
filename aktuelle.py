@@ -218,7 +218,7 @@ def kurslese(pathin, pathout):
             #ISIN, Brief_volumen,  Geld_volumen, Briefkurs,Geldkurs , geld_umsatz, spreadie, Zeit = quoten(ISIN)
             #print(ISIN, Brief_volumen,  Geld_volumen, Briefkurs,Geldkurs , geld_umsatz, spreadie, Zeit )
             e_ISIN, firmenname, e_geldkurs, e_briefkurs, e_andvortag, e_tageshoch, e_tagestief, e_umsatz, the_time = schnell_kurs(ISIN)
-            print(e_ISIN, firmenname, e_geldkurs, e_briefkurs, e_andvortag, e_tageshoch, e_tagestief, e_umsatz, the_time)
+            #print(e_ISIN, firmenname, e_geldkurs, e_briefkurs, e_andvortag, e_tageshoch, e_tagestief, e_umsatz, the_time)
             #atze = quoten(ISIN)
             #kurse.append(atze)
             atze = schnell_kurs(ISIN)
@@ -267,7 +267,7 @@ while int(slimestr) >= 8  and int(slimestr) < 22:
     
         keule = kurslese('ISIN_aktien.csv', 'kursdaten_lemon_tradeble_400.csv')
 
-        print(keule)
+        #print(keule)
         with open('kursdaten_lemon_'+ timestr +'.csv', 'a') as f:
             keule.to_csv(f, header=f.tell() == 0)
 
@@ -277,7 +277,7 @@ while int(slimestr) >= 8  and int(slimestr) < 22:
     #print(atze.columns)
 
     #atze.drop(['Unnamed: 0'], axis=1, inplace = True)
-    #atze.tail(80000).to_csv('atze.csv')
+    #atze.tail(8000).to_csv('atze.csv')
     #print(atze.columns)
 
 
