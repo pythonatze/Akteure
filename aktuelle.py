@@ -218,7 +218,7 @@ def kurslese(pathin, pathout):
             #ISIN, Brief_volumen,  Geld_volumen, Briefkurs,Geldkurs , geld_umsatz, spreadie, Zeit = quoten(ISIN)
             #print(ISIN, Brief_volumen,  Geld_volumen, Briefkurs,Geldkurs , geld_umsatz, spreadie, Zeit )
             e_ISIN, firmenname, e_geldkurs, e_briefkurs, e_andvortag, e_tageshoch, e_tagestief, e_umsatz, the_time = schnell_kurs(ISIN)
-            #print(e_ISIN, firmenname, e_geldkurs, e_briefkurs, e_andvortag, e_tageshoch, e_tagestief, e_umsatz, the_time)
+            print(e_ISIN, firmenname, e_geldkurs, e_briefkurs, e_andvortag, e_tageshoch, e_tagestief, e_umsatz, the_time)
             #atze = quoten(ISIN)
             #kurse.append(atze)
             atze = schnell_kurs(ISIN)
