@@ -1,0 +1,5 @@
+outs:
+- md5: 1ab6afa8565d1359d01a9db936d3bc74
+  size: 4642806
+  hash: md5
+  path: kursdaten_lemon_20230622.csv
